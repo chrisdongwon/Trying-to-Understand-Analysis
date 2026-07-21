@@ -4,7 +4,11 @@ title: "About"
 
 This is my attempt at trying to teach myself analysis (again).
 I just did not have the aptitude, fortitude, and the minutes as an undergraduate to fully understand analysis.
-As I quit my graduate program, I still wondered - do I know any analysis?
+
+As I quit my graduate program, I still wondered - do I know *any* analysis?
 
 > For I was consciscious that I knew practically nothing...
+> 
 > <cite>- Socrates</cite>
+
+I sincerely hope that this collection of my mathematical ramblings provide some insight towards the problems you are trying to solve - life or mathematical.
