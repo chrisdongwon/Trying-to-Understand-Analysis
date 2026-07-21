@@ -1,0 +1,11 @@
+---
+title: "Chapter 1 — The Real Numbers"
+---
+
+# Exercises
+
+| Exercise | Status |
+|----------|--------|
+| [1.1](../exercises/chapter-01/ex-1-1.qmd) | ✓ |
+| [1.2](../exercises/chapter-01/ex-1-2.qmd) | ✓ |
+| [1.3](../exercises/chapter-01/ex-1-3.qmd) | In Progress |

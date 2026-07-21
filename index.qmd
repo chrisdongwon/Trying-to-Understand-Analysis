@@ -2,6 +2,15 @@
 title: "Trying to Understand Analysis"
 ---
 
-This is a Quarto website.
+# Understanding Analysis Solutions
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+These notes document my solutions and commentary while working through
+Stephen Abbott's *Understanding Analysis*.
+
+The emphasis is on understanding the proofs rather than simply obtaining
+correct answers.
+
+## Contents
+
+- [Chapter 1](chapters/chapter-01.qmd)
+- Chapter 2 *(coming soon)*

@@ -1,0 +1,35 @@
+---
+title: "Exercise 1.2"
+---
+
+## Problem
+
+State the exercise in your own words or quote only the minimum necessary
+to identify it.
+
+> *Understanding Analysis*, Chapter 1, Exercise 1.1.
+
+---
+
+## Solution
+
+Write your proof here.
+
+$$
+\ldots
+$$
+
+---
+
+## Remarks
+
+- Why does this proof work?
+- Is there a shorter proof?
+- What theorem is this preparing us for?
+
+---
+
+← Previous (none)
+
+[Chapter 1](../../chapters/chapter-01.qmd)
+[Exercise 1.3](ex-1-3.qmd) →
