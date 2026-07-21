@@ -4,9 +4,10 @@ title: "Exercise 1.2.1"
 
 ## Problem
 
-Prove that $\sqrt{3}$ is irrational. Does a similar argument work to show $\sqrt6$ is irrational?
+(a) Prove that $\sqrt{3}$ is irrational. Does a similar argument work to show $\sqrt6$ is irrational?
+(b) Where does the proof of Theorem 1.1.1 break down if we try to use it to prove $\sqrt{4}$ is irrational?
 
-## Solution
+## Solution (a)
 
 It absolutely helps to review the proof of 
 [Theorem 1.1.1](../../theorems/chapter-01/theorem-1-1-1.qmd), since an analogous reasoning will be used.
@@ -46,7 +47,7 @@ p^2 = 9k^2 + 12k + 4 = 3(3k^2 + 4k + 1) + 1
 $$
 meaning $p^2$ is not a multiple of $3$.
 
-In either cases, $p^2$ is not a multiple of $3$.
+In either case, $p^2$ is not a multiple of $3$.
 :::
 
 :::
@@ -132,5 +133,26 @@ In any case, $p^2$ is not a multiple of $6$.
 
 It then follows that $p$ is a multiple of $6$, so we follow through a similar argument as above to conclude that $GCD(p,q) \geq 6$, which contradicts the assumption that $GCD(p,q) = 1$.
 While it required more computational work, we still achieve an analogous result that $\sqrt{6} \not \in \mathbb{Q}$.
+
+## Solution (b)
+
+Suppose that we use an analogous reasoning to conclude that $p^2 = 4q^2$, where we can continue by saying that $p^2$ is a multiple of $4$.
+While it is very tempting to claim that $p$ also is a multiple of $4$, it sadly is not the case for all nonzero remainders.
+More specifically, consider the case when the remainder of $p$ is $2$ when divided by $4$.
+It follows that there exists $k \in \mathbb{Z}$ where $p = 4k + 2$. However, with
+$$
+p^2 = 16k^2 + 16k + 4 = 4(4k^2 + 4k + 1)
+$$
+it follows that $p^2$ is a multiple of $4$.
+As a counterexample, consider $p = 6$.
+
+$6$ has a remainder of $2$ when divided by $4$, and $6^2 = 36 = 4 \cdot 9$, meaning $6^2$ is a multiple of $4$.
+
+Or, of course, by realizing that
+
+$$
+\sqrt{4} = 2 \in \mathbb{Q}
+$$
+one could blindly suggest that we are just making our lives more difficult by considering impossibility as a possibility. Math!
 
 [Exercise 1.2.2](ex-1-2-2.qmd) →

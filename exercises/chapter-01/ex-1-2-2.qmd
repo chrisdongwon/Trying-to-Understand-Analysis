@@ -1,34 +1,35 @@
 ---
-title: "Exercise 1.3"
+title: "Exercise 1.2.2"
 ---
 
 ## Problem
 
-State the exercise in your own words or quote only the minimum necessary
-to identify it.
-
-> *Understanding Analysis*, Chapter 1, Exercise 1.1.
-
----
+Show that there is no rational number $r$ satisfying $2^r = 3$.
 
 ## Solution
 
-Write your proof here.
-
+For the sake of contradiction, suppose that there exists $\frac{p}{q} \in \mathbb{Q}$ with
 $$
-\ldots
+2^{\frac{p}{q}} = 3
 $$
+where $p,q \in \mathbb{Z}$, $q \not = 0$, and $GCD(p,q) = 1$. 
 
----
+Clearly, $\frac{p}{q} = 0$ is not a solution here, so let us assume without loss of generality that $p \not = 0$ and $q > 0$.
 
-## Remarks
+It follows that
+$$
+2^p = 3^q
+$$
+where we can consider the following cases depending on whether $p$ is positive or negative.
 
-- Why does this proof work?
-- Is there a shorter proof?
-- What theorem is this preparing us for?
+Suppose that $p > 0$. It then follows that an even integer $2^p$ is equal to an odd integer $3^q$, which is a contradiction.
 
----
+Suppose that $p < 0$. It then follows that
+$$
+2^p = \frac{1}{2^{-p}} = (\frac{1}{2})^{-p}= 3^q
+$$
+where $(\frac{1}{2})^{-p} < 1$ and $1 < 3^q$, thus $(\frac{1}{2})^{-p} \not = 3^q$, which is a contradiction. 
 
-← Previous (none)
+With contradiction in all cases, it follows that there is no such rational number $\frac{p}{q} = r$ with $2^r = 3$.
 
-[Chapter 1](../../chapters/chapter-01.qmd)
+← [Exercise 1.2.1](ex-1-2-1.qmd)
