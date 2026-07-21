@@ -1,16 +1,114 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Trying to Understand Analysis",
+    "section": "",
+    "text": "These notes document my solutions and commentary while working through Stephen Abbott’s Understanding Analysis.\nThe emphasis is on understanding the proofs rather than simply obtaining correct answers.\n\n\n\nChapter 1\nChapter 2 (coming soon)"
+  },
+  {
+    "objectID": "index.html#contents",
+    "href": "index.html#contents",
+    "title": "Trying to Understand Analysis",
+    "section": "",
+    "text": "Chapter 1\nChapter 2 (coming soon)"
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-1.html",
+    "href": "exercises/chapter-01/ex-1-1.html",
+    "title": "Exercise 1.1",
+    "section": "",
+    "text": "State the exercise in your own words or quote only the minimum necessary to identify it.\n\nUnderstanding Analysis, Chapter 1, Exercise 1.1."
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-1.html#problem",
+    "href": "exercises/chapter-01/ex-1-1.html#problem",
+    "title": "Exercise 1.1",
+    "section": "",
+    "text": "State the exercise in your own words or quote only the minimum necessary to identify it.\n\nUnderstanding Analysis, Chapter 1, Exercise 1.1."
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-1.html#solution",
+    "href": "exercises/chapter-01/ex-1-1.html#solution",
+    "title": "Exercise 1.1",
+    "section": "Solution",
+    "text": "Solution\nWrite your proof here.\n\\[\n\\ldots\n\\]"
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-1.html#remarks",
+    "href": "exercises/chapter-01/ex-1-1.html#remarks",
+    "title": "Exercise 1.1",
+    "section": "Remarks",
+    "text": "Remarks\n\nWhy does this proof work?\nIs there a shorter proof?\nWhat theorem is this preparing us for?\n\n\n← Previous (none)\nChapter 1\nExercise 1.2 →"
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-3.html",
+    "href": "exercises/chapter-01/ex-1-3.html",
+    "title": "Exercise 1.3",
+    "section": "",
+    "text": "State the exercise in your own words or quote only the minimum necessary to identify it.\n\nUnderstanding Analysis, Chapter 1, Exercise 1.1."
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-3.html#problem",
+    "href": "exercises/chapter-01/ex-1-3.html#problem",
+    "title": "Exercise 1.3",
+    "section": "",
+    "text": "State the exercise in your own words or quote only the minimum necessary to identify it.\n\nUnderstanding Analysis, Chapter 1, Exercise 1.1."
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-3.html#solution",
+    "href": "exercises/chapter-01/ex-1-3.html#solution",
+    "title": "Exercise 1.3",
+    "section": "Solution",
+    "text": "Solution\nWrite your proof here.\n\\[\n\\ldots\n\\]"
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-3.html#remarks",
+    "href": "exercises/chapter-01/ex-1-3.html#remarks",
+    "title": "Exercise 1.3",
+    "section": "Remarks",
+    "text": "Remarks\n\nWhy does this proof work?\nIs there a shorter proof?\nWhat theorem is this preparing us for?\n\n\n← Previous (none)\nChapter 1"
+  },
+  {
+    "objectID": "chapters/chapter-01.html",
+    "href": "chapters/chapter-01.html",
+    "title": "Chapter 1 — The Real Numbers",
+    "section": "",
+    "text": "Exercises\n\n\n\nExercise\nStatus\n\n\n\n\n1.1\n✓\n\n\n1.2\n✓\n\n\n1.3\nIn Progress"
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-2.html",
+    "href": "exercises/chapter-01/ex-1-2.html",
+    "title": "Exercise 1.2",
+    "section": "",
+    "text": "State the exercise in your own words or quote only the minimum necessary to identify it.\n\nUnderstanding Analysis, Chapter 1, Exercise 1.1."
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-2.html#problem",
+    "href": "exercises/chapter-01/ex-1-2.html#problem",
+    "title": "Exercise 1.2",
+    "section": "",
+    "text": "State the exercise in your own words or quote only the minimum necessary to identify it.\n\nUnderstanding Analysis, Chapter 1, Exercise 1.1."
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-2.html#solution",
+    "href": "exercises/chapter-01/ex-1-2.html#solution",
+    "title": "Exercise 1.2",
+    "section": "Solution",
+    "text": "Solution\nWrite your proof here.\n\\[\n\\ldots\n\\]"
+  },
+  {
+    "objectID": "exercises/chapter-01/ex-1-2.html#remarks",
+    "href": "exercises/chapter-01/ex-1-2.html#remarks",
+    "title": "Exercise 1.2",
+    "section": "Remarks",
+    "text": "Remarks\n\nWhy does this proof work?\nIs there a shorter proof?\nWhat theorem is this preparing us for?\n\n\n← Previous (none)\nChapter 1 Exercise 1.3 →"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Trying to Understand Analysis",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   }
 ]
