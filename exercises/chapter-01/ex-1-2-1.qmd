@@ -1,0 +1,136 @@
+---
+title: "Exercise 1.2.1"
+---
+
+## Problem
+
+Prove that $\sqrt{3}$ is irrational. Does a similar argument work to show $\sqrt6$ is irrational?
+
+## Solution
+
+It absolutely helps to review the proof of 
+[Theorem 1.1.1](../../theorems/chapter-01/theorem-1-1-1.qmd), since an analogous reasoning will be used.
+
+Suppose that $\sqrt{3} \in \mathbb{Q}$. Then, there exist $p, q \in \mathbb{Z}$ with
+$$
+\frac{p}{q}=\sqrt{3}
+$$
+where $q \not = 0$ and $GCD(p,q) = 1$. We immediately have that
+$$
+p^2 = 3q^2
+$$
+thus $p^2$ is a multiple of $3$.
+Now, let us examine if $p$ also must be a multiple of $3$.
+
+::: {#lem-order}
+
+Suppose that $p^2$ is a multiple of 3. Then, $p$ is a multiple of 3.
+
+::: {.proof}
+
+We will prove the contrapositive: if $p$ is not a multiple of $3$, then $p^2$ is not a multiple of $3$.
+Suppose that $p$ is not a multiple of $3$.
+This implies that when $p$ is divided by $3$, the remainder will be $1$ or $2$.
+
+Suppose that the remainder is $1$. e.g., there exists $k \in \mathbb{Z}$ such that $p = 3k + 1$.
+It then follows that
+$$
+p^2 = 9k^2 + 6k + 1 = 3(3k^2 + 2k) + 1
+$$
+meaning $p^2$ is not a multiple of $3$.
+
+In a similar sense, suppose that the remainder is $2$. e.g., there exists $k \in \mathbb{Z}$ such that $p = 3k + 2$.
+It then follows that
+$$
+p^2 = 9k^2 + 12k + 4 = 3(3k^2 + 4k + 1) + 1
+$$
+meaning $p^2$ is not a multiple of $3$.
+
+In either cases, $p^2$ is not a multiple of $3$.
+:::
+
+:::
+
+It then follows that $p$ is a multiple of $3$, so there exists $l \in \mathbb{Z}$ with
+$$
+p = 3l
+$$
+
+and it follows that
+$$
+p^2 = (3l)^2 = 9l^2 = 3q^2
+$$
+
+and consequently we have that $3l^2 = q^2$.
+Reapplication of Lemma 1 implies that $q$ also must be a multiple of $3$.
+However, if $p$ and $q$ are both multiples of 3, then $GCD(p,q) \geq 3$, which contradicts the initial assumption that $GCD(p,q) = 1$.
+Therefore, it must be the case that there does not exist a rational number whose square is $3$, i.e.,
+$$
+\sqrt{3} \not \in \mathbb{Q}.
+$$
+
+Now, let us examine if we can apply a similar argument for $\sqrt{6}$.
+Suppose that $\sqrt{6} \in \mathbb{Q}$. Then, there exist $p,q\in\mathbb{Z}$ with
+$$
+\frac{p}{q}=\sqrt{6}
+$$
+where $q \not = 0$ and $GCD(p,q) = 1$. We also have that 
+$$
+p^2 = 6q^2
+$$
+thus $p^2$ is a multiple of $6$, but what about $p$?
+
+::: {#lem-order}
+
+Suppose that $p^2$ is a multiple of 6. Then, $p$ is a multiple of 6.
+
+::: {.proof}
+
+We will prove the contrapositive: if $p$ is not a multiple of $6$, then $p^2$ is not a multiple of $6$.
+Suppose that $p$ is not a multiple of $6$.
+This implies that when $p$ is divided by $6$, the remainder will be $1,2,3,4$, or $5$.
+
+Suppose that the remainder is $1$. e.g., there exists $k \in \mathbb{Z}$ such that $p = 6k + 1$.
+It then follows that
+$$
+p^2 = 36k^2 + 12k + 1 = 6(6k^2 + 2k) + 1
+$$
+meaning $p^2$ is not a multiple of $6$.
+
+Suppose that the remainder is $2$. e.g., there exists $k \in \mathbb{Z}$ such that $p = 6k + 2$.
+It then follows that
+$$
+p^2 = 36k^2 + 24k + 4 = 6(6k^2 + 4k) + 4
+$$
+meaning $p^2$ is not a multiple of $6$.
+
+Suppose that the remainder is $3$. e.g., there exists $k \in \mathbb{Z}$ such that $p = 6k + 3$.
+It then follows that
+$$
+p^2 = 36k^2 + 36k + 9 = 6(6k^2 + 6k + 1) + 3
+$$
+meaning $p^2$ is not a multiple of $6$.
+
+Suppose that the remainder is $4$. e.g., there exists $k \in \mathbb{Z}$ such that $p = 6k + 4$.
+It then follows that
+$$
+p^2 = 36k^2 + 48k + 16 = 6(6k^2 + 8k + 2) + 4
+$$
+meaning $p^2$ is not a multiple of $6$.
+
+Suppose that the remainder is $5$. e.g., there exists $k \in \mathbb{Z}$ such that $p = 6k + 5$.
+It then follows that
+$$
+p^2 = 36k^2 + 60k + 25 = 6(6k^2 + 10k + 4) + 1
+$$
+meaning $p^2$ is not a multiple of $6$.
+
+In any case, $p^2$ is not a multiple of $6$.
+:::
+
+:::
+
+It then follows that $p$ is a multiple of $6$, so we follow through a similar argument as above to conclude that $GCD(p,q) \geq 6$, which contradicts the assumption that $GCD(p,q) = 1$.
+While it required more computational work, we still achieve an analogous result that $\sqrt{6} \not \in \mathbb{Q}$.
+
+[Exercise 1.2.2](ex-1-2-2.qmd) →

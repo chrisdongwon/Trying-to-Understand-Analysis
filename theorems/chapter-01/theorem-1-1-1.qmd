@@ -1,0 +1,61 @@
+---
+title: "Theorem 1.1.1"
+---
+
+# Statement
+
+There is no rational number whose square is $2$.
+
+# Proof
+
+For the sake of contradiction, suppose that there exists $\frac{p}{q} \in \mathbb{Q}$ whose square is $2$, i.e.,
+$$
+(\frac{p}{q})^2 = 2
+$$
+
+with $p, q \in \mathbb{Z}$, $q \not = 0$, and $GCD(p,q) = 1$.
+
+It immediately follows that $p^2 = 2q^2$, thus $p^2$ is a multiple of $2$, i.e., an *even*.
+Now, let us examine if $p$ also must be even.
+
+::: {#lem-order}
+
+Suppose that $p^2$ is even. Then, $p$ is even.
+
+::: {.proof}
+
+We will prove the contrapositive: if $p$ is not even, then $p^2$ is not even.
+Suppose that $p$ is not even, i.e. *odd*. 
+This implies that when $p$ is divided by $2$, the remainder will be $1$, thus there exists $k \in \mathbb{Z}$ with
+$$
+p = 2k + 1
+$$
+
+and it follows that
+$$
+p^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1
+$$
+
+thus $p^2$ also has a remainder of $1$ when divided by $2$, and this implies that $p^2$ must be odd, i.e., not even. 
+
+:::
+
+:::
+
+It then follows that $p$ is a multiple of $2$, so there exists $l \in \mathbb{Z}$ with
+$$
+p = 2l
+$$
+
+and it follows that
+$$
+p^2 = (2l)^2 = 4l^2 = 2q^2
+$$
+
+and consequently we have that $2l^2 = q^2$.
+Reapplication of Lemma 1 implies that $q$ also must be even.
+However, if $p$ and $q$ are both even, then $GCD(p,q) \geq 2$, which contradicts the initial assumption that $GCD(p,q) = 1$.
+Therefore, it must be the case that there does not exist a rational number whose square is $2$, i.e.,
+$$
+\sqrt{2} \not \in \mathbb{Q}.
+$$

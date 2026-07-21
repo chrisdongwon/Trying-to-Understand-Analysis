@@ -3,10 +3,9 @@ title: "Trying to Understand Analysis"
 ---
 
 These notes document my solutions and commentary while working through
-Stephen Abbott's *Understanding Analysis*.
+Stephen Abbott's *Understanding Analysis*, 2nd edition.
 
-The emphasis is on understanding the proofs rather than simply obtaining
-correct answers.
+The emphasis is on understanding the proofs rather than simply having a library of theorems and proofs.
 
 ## Contents
 

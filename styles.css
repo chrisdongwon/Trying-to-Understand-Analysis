@@ -1,1 +1,31 @@
 /* css styles */
+.lemma {
+    border-left: 5px solid #2c7fb8;
+    background-color: #f5faff;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+}
+
+.lemma > :first-child {
+    margin-top: 0;
+}
+
+.lemma > :last-child {
+    margin-bottom: 0;
+}
+
+.proof {
+    margin: 1rem 0 1rem 2rem;
+    padding-left: 1rem;
+    border-left: 3px solid #d0d0d0;
+    color: #333;
+}
+
+.proof p:first-child {
+    margin-top: 0;
+}
+
+.proof p:last-child {
+    margin-bottom: 0;
+}
