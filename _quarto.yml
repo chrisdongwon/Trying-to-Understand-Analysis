@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: _site
+  pre-render: scripts/build_nav.py
 
 website:
   title: "Trying to Understand Analysis"
@@ -16,6 +17,5 @@ format:
       - cosmo
     css: styles.css
     toc: true
-
-
-
+    filters:
+      - filters/exercise-nav.lua

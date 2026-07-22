@@ -1,0 +1,38 @@
+{
+  "ex-1-2-1": {
+    "title": "Exercise 1.2.1",
+    "prev": null,
+    "next": {
+      "path": "/exercises/chapter-01/ex-1-2-2.qmd",
+      "title": "Exercise 1.2.2"
+    },
+    "index": "/chapters/chapter-01.qmd"
+  },
+  "ex-1-2-2": {
+    "title": "Exercise 1.2.2",
+    "prev": {
+      "path": "/exercises/chapter-01/ex-1-2-1.qmd",
+      "title": "Exercise 1.2.1"
+    },
+    "next": {
+      "path": "/exercises/chapter-01/ex-1-2-3.qmd",
+      "title": "Exercise 1.2.3"
+    },
+    "index": "/chapters/chapter-01.qmd"
+  },
+  "ex-1-2-3": {
+    "title": "Exercise 1.2.3",
+    "prev": {
+      "path": "/exercises/chapter-01/ex-1-2-2.qmd",
+      "title": "Exercise 1.2.2"
+    },
+    "next": null,
+    "index": "/chapters/chapter-01.qmd"
+  },
+  "theorem-1-1-1": {
+    "title": "Theorem 1.1.1",
+    "prev": null,
+    "next": null,
+    "index": "/chapters/chapter-01.qmd"
+  }
+}

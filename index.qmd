@@ -9,5 +9,5 @@ The emphasis is on understanding the proofs rather than simply having a library 
 
 ## Contents
 
-- [Chapter 1](chapters/chapter-01.qmd)
+- [Chapter 1 - The Real Numbers](chapters/chapter-01.qmd)
 - Chapter 2 *(coming soon)*

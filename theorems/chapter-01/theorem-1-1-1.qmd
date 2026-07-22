@@ -2,11 +2,13 @@
 title: "Theorem 1.1.1"
 ---
 
-# Statement
-
+::: {style="text-align: center;"}
 There is no rational number whose square is $2$.
+:::
 
-# Proof
+---
+
+::: {.proof}
 
 For the sake of contradiction, suppose that there exists $\frac{p}{q} \in \mathbb{Q}$ whose square is $2$, i.e.,
 $$
@@ -59,3 +61,5 @@ Therefore, it must be the case that there does not exist a rational number whose
 $$
 \sqrt{2} \not \in \mathbb{Q}.
 $$
+
+:::

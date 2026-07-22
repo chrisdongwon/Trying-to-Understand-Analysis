@@ -3,7 +3,7 @@ title: "About"
 ---
 
 This is my attempt at trying to teach myself analysis (again).
-I just did not have the aptitude, fortitude, and the minutes as an undergraduate to fully understand analysis.
+I just did not have the aptitude, fortitude, and the gratitude as an undergraduate to fully understand analysis.
 
 As I quit my graduate program, I still wondered - do I know *any* analysis?
 

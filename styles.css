@@ -29,3 +29,27 @@
 .proof p:last-child {
     margin-bottom: 0;
 }
+
+.proof p:last-child::after {
+  content: " \25A0"; /* Unicode hex for an open square '□' */
+  float: right;
+}
+
+.exercise-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  gap: 1rem;
+}
+.exercise-nav > div { flex: 1; }
+.exercise-nav .nav-prev { text-align: left; }
+.exercise-nav .nav-back { text-align: center; }
+.exercise-nav .nav-next { text-align: right; }
+.exercise-nav a { text-decoration: none; font-weight: 500; }
+
+@media (max-width: 600px) {
+  .exercise-nav { flex-direction: column; text-align: center; }
+}

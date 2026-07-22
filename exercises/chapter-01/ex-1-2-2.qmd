@@ -30,6 +30,4 @@ $$
 $$
 where $(\frac{1}{2})^{-p} < 1$ and $1 < 3^q$, thus $(\frac{1}{2})^{-p} \not = 3^q$, which is a contradiction. 
 
-With contradiction in all cases, it follows that there is no such rational number $\frac{p}{q} = r$ with $2^r = 3$.
-
-← [Exercise 1.2.1](ex-1-2-1.qmd)
+With contradiction in all cases, it follows that there is no such rational number $r = \frac{p}{q}$ with $2^r = 3$.

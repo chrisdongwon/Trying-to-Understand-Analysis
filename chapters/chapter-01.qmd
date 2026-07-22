@@ -27,4 +27,5 @@ foundation for the rest of analysis.
 | Exercise | Status |
 |----------|--------|
 | [1.2.1](../exercises/chapter-01/ex-1-2-1.qmd) | ✓ |
-| [1.2.2](../exercises/chapter-01/ex-1-2-2.qmd) | In Progress |
+| [1.2.2](../exercises/chapter-01/ex-1-2-2.qmd) | ✓ |
+| [1.2.3](../exercises/chapter-01/ex-1-2-3.qmd) | In Progress |

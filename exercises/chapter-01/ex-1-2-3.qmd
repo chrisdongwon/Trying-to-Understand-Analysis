@@ -1,0 +1,81 @@
+---
+title: "Exercise 1.2.3"
+---
+
+## Problem
+
+Decide which of the following represent true statements about the nature of sets.
+For any that are false, provide a specific example where the statement in question does not hold.
+
+(a) If $A_1 \supseteq A_2 \supseteq A_3 \supseteq A_4 \cdots$ are all sets containing an infinite number of elements, then the intersection $\bigcap^{\infty}_{n=1}A_n$ is infinite as well.
+(b) If $A_1 \supseteq A_2 \supseteq A_3 \supseteq A_4 \cdots$ are all finite, nonempty sets of real numbers, then the intersection $\bigcap^{\infty}_{n=1}A_n$ is finite and nonempty.
+(c) $A \cap (B \cup C) = (A \cap B) \cup C$
+(d) $A \cap (B \cap C) = (A \cap B) \cap C$
+(e) $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
+
+## Solution
+
+### (a)
+
+Let us reuse Example 1.2.2 for this exercise.
+It also helps to review the argument used in the example, which is not entirely trivial in my opinion, if I say so myself.
+
+::: {#lem-order}
+Let $n \in \mathbb{N}$ and $A_n = \{m \in \mathbb{N} : m \geq n\}$. Then,
+$$
+\bigcap^{\infty}_{n=1}A_n = \emptyset
+$$
+
+::: {.proof}
+For the sake of contradiction, suppose that $\bigcap^{\infty}_{n=1}A_n \not = \emptyset$.
+Since $\bigcap^{\infty}_{n=1}A_n \subseteq \mathbb{N}$, let $N \in \mathbb{N}$ and suppose that $N \in \bigcap^{\infty}_{n=1}A_n$.
+It then follows from the definition of infinite intersection that $N \in A_n$ for all $n \in \mathbb{N}$.
+However, we see that $N \in A_N$ but $N \not \in A_{N+1}$ by the definition of $A_n$.
+Therefore, it is not the case that $N \in A_n$ for all $n \in \mathbb{N}$, thus $N \not \in \bigcap^{\infty}_{n=1}A_n$, and this is a contradiction.
+It follows that no such $N \in \mathbb{N}$ exists and we have that $\bigcap^{\infty}_{n=1}A_n = \emptyset$ as desired.
+:::
+:::
+
+With Lemma 1, it follows that (a) is a *false* statement.
+
+### (b)
+
+We will show that (b) indeed is a true statement. As a matter of fact, this sounds awfully similar to [Cantor's Intersection Theorem](https://en.wikipedia.org/wiki/Cantor%27s_intersection_theorem#Statement_for_real_numbers), or Theorem 1.4.1. (Nested Inverval Property). (LINK THIS IN LATER)
+
+::: {#lem-order}
+If $A_1 \supseteq A_2 \supseteq A_3 \supseteq A_4 \cdots$ are all finite, nonempty sets of real numbers, then the intersection $\bigcap^{\infty}_{n=1}A_n$ is finite and nonempty.
+
+::: {.proof}
+Suppose that $A_n \subseteq \mathbb{R}$ is finite and nonempty for all $n \in \mathbb{N}$ with the property that
+$$
+A_i \supseteq A_j
+$$
+whenever $i \leq j$ for all $i, j \in \mathbb{N}$.
+
+It then follows that
+$$
+|A_i| \geq |A_j|
+$$
+whenever $i \leq j$ for all $i, j \in \mathbb{N}$.
+
+Now, how to show that this sequence of cardinalities must converge??
+e.g. there exists $N \in \mathbb{N}$ such that for all $n \in \mathbb{N}$ with $n \geq N$, $|A_n| = |A_N|$...? This also shows that
+$$
+\bigcap^{\infty}_{n=1}A_n = A_N
+$$
+and $A_N$ is nonempty.
+
+
+Showing finiteness - demonstrate a fixed upper bound. How about, prove that
+$$
+|\bigcap^{\infty}_{n=1}A_n| \leq |A_1|
+$$
+
+:::
+:::
+
+### (c)
+
+### (d)
+
+### (e)
