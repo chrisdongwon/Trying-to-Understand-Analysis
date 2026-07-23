@@ -27,50 +27,49 @@ $$
 $$
 
 ::: {.proof}
-For the sake of contradiction, suppose that $\bigcap^{\infty}_{n=1}A_n \not = \emptyset$.
-Since $\bigcap^{\infty}_{n=1}A_n \subseteq \mathbb{N}$, let $N \in \mathbb{N}$ and suppose that $N \in \bigcap^{\infty}_{n=1}A_n$.
+Let $A = \bigcap^{\infty}_{n=1}A_n$. For the sake of contradiction, suppose that $A \not = \emptyset$.
+Since $A \subseteq \mathbb{N}$, let $N \in \mathbb{N}$ and suppose that $N \in A$.
 It then follows from the definition of infinite intersection that $N \in A_n$ for all $n \in \mathbb{N}$.
 However, we see that $N \in A_N$ but $N \not \in A_{N+1}$ by the definition of $A_n$.
-Therefore, it is not the case that $N \in A_n$ for all $n \in \mathbb{N}$, thus $N \not \in \bigcap^{\infty}_{n=1}A_n$, and this is a contradiction.
-It follows that no such $N \in \mathbb{N}$ exists and we have that $\bigcap^{\infty}_{n=1}A_n = \emptyset$ as desired.
+Therefore, it is not the case that $N \in A_n$ for all $n \in \mathbb{N}$, thus $N \not \in A$, and this is a contradiction.
+It follows that no such $N \in \mathbb{N}$ exists and we have that $A = \emptyset$ as desired.
 :::
 :::
 
 With Lemma 1, it follows that (a) is a *false* statement.
 
 ### (b)
+In order to help us with the argument, we will have to rely on some outside ideas.
 
-We will show that (b) indeed is a true statement. As a matter of fact, this sounds awfully similar to [Cantor's Intersection Theorem](https://en.wikipedia.org/wiki/Cantor%27s_intersection_theorem#Statement_for_real_numbers), or Theorem 1.4.1. (Nested Inverval Property). (LINK THIS IN LATER)
+::: {.lemma}
+**Well-ordering Principle** Let $S \subseteq \mathbb{N}$ with $S \not = \emptyset$.
+Then, there exists $m \in S$ such that $m \leq s$ for all $s \in S$.
+:::
+
+Notice that $m$ denotes the *minimum* of the subset $S$. 
+
+Let us prove a lemma that specifies the conditions for (b) to be a true statement.
 
 ::: {#lem-order}
-If $A_1 \supseteq A_2 \supseteq A_3 \supseteq A_4 \cdots$ are all finite, nonempty sets of real numbers, then the intersection $\bigcap^{\infty}_{n=1}A_n$ is finite and nonempty.
+If $A_1 \supseteq A_2 \supseteq A_3 \supseteq A_4 \cdots$ are all finite, nonempty sets of real numbers, then $\bigcap^{\infty}_{n=1}A_n = A_m$ where $|A_m| \leq |A_n|$ for all $n \in \mathbb{N}$.
+
+
 
 ::: {.proof}
-Suppose that $A_n \subseteq \mathbb{R}$ is finite and nonempty for all $n \in \mathbb{N}$ with the property that
+Let $A_1, A_2, \ldots$ be finite nonempty sets of real numbers such that
 $$
 A_i \supseteq A_j
 $$
 whenever $i \leq j$ for all $i, j \in \mathbb{N}$.
 
-It then follows that
-$$
-|A_i| \geq |A_j|
-$$
-whenever $i \leq j$ for all $i, j \in \mathbb{N}$.
+Let $S = \{|A_n| : n \in \mathbb{N}\}$.
+Since $A_n$ is finite and nonempty for all $n \in \mathbb{N}$, it follows that $S \subseteq \mathbb{N}$, and it follows that $S \not = \emptyset$ with $|A_1| \in S$. By Well-ordering principle, it follows that there exists $|A_m| \in S$ such that $|A_m| \leq |A_n|$ for all $n \in \mathbb{N}$. 
 
-Now, how to show that this sequence of cardinalities must converge??
-e.g. there exists $N \in \mathbb{N}$ such that for all $n \in \mathbb{N}$ with $n \geq N$, $|A_n| = |A_N|$...? This also shows that
-$$
-\bigcap^{\infty}_{n=1}A_n = A_N
-$$
-and $A_N$ is nonempty.
+Let $a \in \bigcap^{\infty}_{n=1}A_n$.
+It then follows that $a \in A_n$ for all $n \in \mathbb{N}$, thus $a \in A_m$ with $m \in \mathbb{N}$.
+Thus, we have that $\bigcap^{\infty}_{n=1}A_n \subseteq A_m$.
 
-
-Showing finiteness - demonstrate a fixed upper bound. How about, prove that
-$$
-|\bigcap^{\infty}_{n=1}A_n| \leq |A_1|
-$$
-
+Now, let $a \in A_m$... (why must it be the case that $m \in A_n$ for all $n$?)
 :::
 :::
 

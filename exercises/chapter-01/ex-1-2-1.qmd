@@ -145,10 +145,9 @@ It follows that there exists $k \in \mathbb{Z}$ where $p = 4k + 2$. However, wit
 $$
 p^2 = 16k^2 + 16k + 4 = 4(4k^2 + 4k + 1)
 $$
-it follows that $p^2$ is a multiple of $4$.
-For counterexample, consider $p = 6$.
+it follows that $p^2$ is a multiple of $4$.\
 
-$6$ has a remainder of $2$ when divided by $4$, and $6^2 = 36 = 4 \cdot 9$, meaning $6^2$ is a multiple of $4$.
+For counterexample, consider $p^2 = 36$, which is a multiple of $4$. Notice that $p = 6$ is not a multiple of $4$.
 
 Or, of course, by realizing that
 
