@@ -69,13 +69,13 @@ Let $a \in \bigcap^{\infty}_{n=1}A_n$.
 It follows from the definition of infinite intersection that $a \in A_n$ for all $n \in \mathbb{N}$.
 With $m \in \mathbb{N}$, it follows that $a \in A_m$, thus we have that $\bigcap^{\infty}_{n=1}A_n \subseteq A_m$.
 
-Let $a \in A_m$, and let $i \in \mathbb{N}$.
+Let $a \in A_m$ and let $i \in \mathbb{N}$.
 Suppose that $i \leq m$. By the definition of $A_n$, we have that $A_i \supseteq A_m$ and it follows that $a \in A_i$.
-Suppose that $m < i$, and for the sake of contradiction, suppose that $a \not \in A_i$.
+Suppose that $m < i$, and for the sake of contradiction, suppose that $a \not \in A_i$. 
+It also follows from the definition of $A_n$ that $A_m \supseteq A_i$.
+Now, $A_i$ cannot be a proper subset of $A_m$, since that would imply that $|A_i| < |A_m|$ and this contradicts the assumption that $A_m$ is the smallest possible subset. 
+Therefore, it follows that the only possibility is that $A_m = A_i$, thus we have that $|A_m| = |A_i|$. 
 
-[double sided inequality should show that the cardinalities of Am and Ai should be the same]
-
-[this should violate the minimality of $A_m$ : is $A_m$ still the minimal set if $A_i$ has less element than $A_m$?]
 :::
 :::
 
