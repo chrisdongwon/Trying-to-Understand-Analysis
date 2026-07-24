@@ -40,36 +40,42 @@ With Lemma 1, it follows that (a) is a *false* statement.
 
 ### (b)
 In order to help us with the argument, we will have to rely on some outside ideas.
+The Well-ordering Principle states that any nonempty subsets of the natural numbers must contain a minimum.
 
 ::: {.lemma}
 **Well-ordering Principle** Let $S \subseteq \mathbb{N}$ with $S \not = \emptyset$.
 Then, there exists $m \in S$ such that $m \leq s$ for all $s \in S$.
 :::
 
-Notice that $m$ denotes the *minimum* of the subset $S$. 
-
 Let us prove a lemma that specifies the conditions for (b) to be a true statement.
+Intuitively, the smallest nonempty subset in the sequence of nested subsets must be the intersection.
 
 ::: {#lem-order}
-If $A_1 \supseteq A_2 \supseteq A_3 \supseteq A_4 \cdots$ are all finite, nonempty sets of real numbers, then $\bigcap^{\infty}_{n=1}A_n = A_m$ where $|A_m| \leq |A_n|$ for all $n \in \mathbb{N}$.
-
-
+If $A_1 \supseteq A_2 \supseteq A_3 \supseteq A_4 \cdots$ are all finite, nonempty sets of real numbers, then there exists $m \in \mathbb{N}$ such that $|A_m| \leq |A_n|$ for all $n \in \mathbb{N}$ and $\bigcap^{\infty}_{n=1}A_n = A_m$.
 
 ::: {.proof}
-Let $A_1, A_2, \ldots$ be finite nonempty sets of real numbers such that
+Let $A_1, A_2, \ldots$ be finite, nonempty sets of real numbers such that
 $$
 A_i \supseteq A_j
 $$
 whenever $i \leq j$ for all $i, j \in \mathbb{N}$.
 
 Let $S = \{|A_n| : n \in \mathbb{N}\}$.
-Since $A_n$ is finite and nonempty for all $n \in \mathbb{N}$, it follows that $S \subseteq \mathbb{N}$, and it follows that $S \not = \emptyset$ with $|A_1| \in S$. By Well-ordering principle, it follows that there exists $|A_m| \in S$ such that $|A_m| \leq |A_n|$ for all $n \in \mathbb{N}$. 
+Since $A_1$ is finite and nonempty, it follows that $|A_1| \in S$, thus $S \not = \emptyset$ and $S \subseteq \mathbb{N}$.
+It follows from the Well-ordering principle that there exists $k \in S$ with $k \leq |A_n|$ for all $n \in \mathbb{N}$. 
+With $k \in S$, there exists $m \in \mathbb{N}$ with $k = |A_m|$.
 
 Let $a \in \bigcap^{\infty}_{n=1}A_n$.
-It then follows that $a \in A_n$ for all $n \in \mathbb{N}$, thus $a \in A_m$ with $m \in \mathbb{N}$.
-Thus, we have that $\bigcap^{\infty}_{n=1}A_n \subseteq A_m$.
+It follows from the definition of infinite intersection that $a \in A_n$ for all $n \in \mathbb{N}$.
+With $m \in \mathbb{N}$, it follows that $a \in A_m$, thus we have that $\bigcap^{\infty}_{n=1}A_n \subseteq A_m$.
 
-Now, let $a \in A_m$... (why must it be the case that $m \in A_n$ for all $n$?)
+Let $a \in A_m$, and let $i \in \mathbb{N}$.
+Suppose that $i \leq m$. By the definition of $A_n$, we have that $A_i \supseteq A_m$ and it follows that $a \in A_i$.
+Suppose that $m < i$, and for the sake of contradiction, suppose that $a \not \in A_i$.
+
+[double sided inequality should show that the cardinalities of Am and Ai should be the same]
+
+[this should violate the minimality of $A_m$ : is $A_m$ still the minimal set if $A_i$ has less element than $A_m$?]
 :::
 :::
 
