@@ -21,10 +21,7 @@ Let us reuse Example 1.2.2 for this exercise.
 It also helps to review the argument used in the example, which is not entirely trivial in my opinion, if I say so myself.
 
 ::: {#lem-order}
-Let $n \in \mathbb{N}$ and $A_n = \{m \in \mathbb{N} : m \geq n\}$. Then,
-$$
-\bigcap^{\infty}_{n=1}A_n = \emptyset
-$$
+Let $n \in \mathbb{N}$ and $A_n = \{m \in \mathbb{N} : m \geq n\}$. Then, $\bigcap^{\infty}_{n=1}A_n = \emptyset$.
 
 ::: {.proof}
 Let $A = \bigcap^{\infty}_{n=1}A_n$. For the sake of contradiction, suppose that $A \not = \emptyset$.
@@ -49,35 +46,45 @@ Then, there exists $m \in S$ such that $m \leq s$ for all $s \in S$.
 
 Let us prove a lemma that specifies the conditions for (b) to be a true statement.
 Intuitively, the smallest nonempty subset in the sequence of nested subsets must be the intersection.
+We begin the argument by asserting the existence of such a minimal subset.
 
 ::: {#lem-order}
-If $A_1 \supseteq A_2 \supseteq A_3 \supseteq A_4 \cdots$ are all finite, nonempty sets of real numbers, then the following are true:
-
-i. there exists $m \in \mathbb{N}$ such that $|A_m| \leq |A_n|$ for all $n \in \mathbb{N}$
-ii. $\bigcap^{\infty}_{n=1}A_n = A_m$
+Let $A_1, A_2, \ldots$ be finite, nonempty sets of real numbers such that $A_i \supseteq A_j$ whenever $i \leq j$ for all $i, j \in \mathbb{N}$.
+Then, there exists $m \in \mathbb{N}$ such that $|A_m| \leq |A_n|$ for all $n \in \mathbb{N}$.
 
 ::: {.proof}
-Let $A_1, A_2, \ldots$ be finite, nonempty sets of real numbers such that
-$$
-A_i \supseteq A_j
-$$
-whenever $i \leq j$ for all $i, j \in \mathbb{N}$.
-
-i. Let $S = \{|A_n| : n \in \mathbb{N}\}$.
+Let $S = \{|A_n| : n \in \mathbb{N}\}$.
 Since $A_1$ is finite and nonempty, it follows that $|A_1| \in S$, thus $S \not = \emptyset$ and $S \subseteq \mathbb{N}$.
-It follows from the Well-ordering principle that there exists $k \in S$ with $k \leq |A_n|$ for all $n \in \mathbb{N}$. 
-With $k \in S$, there exists $m \in \mathbb{N}$ with $k = |A_m|$.
-ii. We first show that $\bigcap^{\infty}_{n=1}A_n \subseteq A_m$.
-Let $a \in \bigcap^{\infty}_{n=1}A_n$.
-By the definition of infinite intersection, it follows that $a \in A_n$ for all $n \in \mathbb{N}$. 
-With $m \in \mathbb{N}$, we have that $a \in A_m$ and thus $\bigcap^{\infty}_{n=1}A_n \subseteq A_m$.
-To show the other inclusion, let $a \in A_m$ and let $n \in \mathbb{N}$.
-From (i), we have that $|A_m| \leq |A_n|$, 
-
-ok?
-
+By the the Well-ordering principle that there exists $k \in S$ with $k \leq |A_n|$ for all $n \in \mathbb{N}$. 
+Since $k \in S$, there exists $m \in \mathbb{N}$ such that $k = |A_m|$.
 :::
 :::
+
+Now we show that this smallest subset $A_m$ indeed is the intersection of the nested subsets.
+
+::: {#lem-order}
+Let $A_1, A_2, \ldots$ be finite, nonempty sets of real numbers such that $A_i \supseteq A_j$ whenever $i \leq j$ for all $i, j \in \mathbb{N}$.
+Then, there exists $m \in \mathbb{N}$ such that $\bigcap_{n=1}^{\infty}A_n = A_m$.
+
+::: {.proof}
+From lemma 2, there exists $m \in \mathbb{N}$ such that $|A_m| \leq |A_n|$ for all $n \in \mathbb{N}$.
+Let $a \in \bigcap_{n=1}^{\infty}A_n$.
+It follows that $a \in A_n$ for all $n \in \mathbb{N}$, thus $a \in A_m$ as well, and we have that $\bigcap_{n=1}^{\infty}A_n \subseteq A_m$. 
+Now, let $a \in A_m$ and let $i \in \mathbb{N}$. There are two cases to consider:
+
+- Suppose that $i \leq m$.
+By the definition of $A_n$, it follows that $A_i \supseteq A_m$, hence $a \in A_i$. 
+- Suppose that $i > m$.
+It also follows from the definition that $A_m \supseteq A_i$ and it immediately follows that $|A_m| \geq |A_i|$.
+Lemma 2 implies that $|A_m| \leq |A_i|$, thus it must be the case that $|A_m| = |A_i|$.
+Since a proper subset of a finite set has smaller cardinality, it follows that $A_m = A_i$, thus we have that $a \in A_i$.
+
+In either case, we have that $a \in A_i$, so by the definition of infinite intersection, it follows that $a \in \bigcap_{n=1}^{\infty}A_n$, and thus $A_m \subseteq \bigcap_{n=1}^{\infty}A_n$.
+With inclusion in both directions, we conclude that $\bigcap_{n=1}^{\infty}A_n = A_m$. 
+:::
+:::
+
+Since $A_m$ is finite and nonempty, it follows that (b) is a *true* statement.
 
 ### (c)
 
