@@ -51,7 +51,10 @@ Let us prove a lemma that specifies the conditions for (b) to be a true statemen
 Intuitively, the smallest nonempty subset in the sequence of nested subsets must be the intersection.
 
 ::: {#lem-order}
-If $A_1 \supseteq A_2 \supseteq A_3 \supseteq A_4 \cdots$ are all finite, nonempty sets of real numbers, then there exists $m \in \mathbb{N}$ such that $|A_m| \leq |A_n|$ for all $n \in \mathbb{N}$ and $\bigcap^{\infty}_{n=1}A_n = A_m$.
+If $A_1 \supseteq A_2 \supseteq A_3 \supseteq A_4 \cdots$ are all finite, nonempty sets of real numbers, then the following are true:
+
+i. there exists $m \in \mathbb{N}$ such that $|A_m| \leq |A_n|$ for all $n \in \mathbb{N}$
+ii. $\bigcap^{\infty}_{n=1}A_n = A_m$
 
 ::: {.proof}
 Let $A_1, A_2, \ldots$ be finite, nonempty sets of real numbers such that
@@ -60,21 +63,18 @@ A_i \supseteq A_j
 $$
 whenever $i \leq j$ for all $i, j \in \mathbb{N}$.
 
-Let $S = \{|A_n| : n \in \mathbb{N}\}$.
+i. Let $S = \{|A_n| : n \in \mathbb{N}\}$.
 Since $A_1$ is finite and nonempty, it follows that $|A_1| \in S$, thus $S \not = \emptyset$ and $S \subseteq \mathbb{N}$.
 It follows from the Well-ordering principle that there exists $k \in S$ with $k \leq |A_n|$ for all $n \in \mathbb{N}$. 
 With $k \in S$, there exists $m \in \mathbb{N}$ with $k = |A_m|$.
-
+ii. We first show that $\bigcap^{\infty}_{n=1}A_n \subseteq A_m$.
 Let $a \in \bigcap^{\infty}_{n=1}A_n$.
-It follows from the definition of infinite intersection that $a \in A_n$ for all $n \in \mathbb{N}$.
-With $m \in \mathbb{N}$, it follows that $a \in A_m$, thus we have that $\bigcap^{\infty}_{n=1}A_n \subseteq A_m$.
+By the definition of infinite intersection, it follows that $a \in A_n$ for all $n \in \mathbb{N}$. 
+With $m \in \mathbb{N}$, we have that $a \in A_m$ and thus $\bigcap^{\infty}_{n=1}A_n \subseteq A_m$.
+To show the other inclusion, let $a \in A_m$ and let $n \in \mathbb{N}$.
+From (i), we have that $|A_m| \leq |A_n|$, 
 
-Let $a \in A_m$ and let $i \in \mathbb{N}$.
-Suppose that $i \leq m$. By the definition of $A_n$, we have that $A_i \supseteq A_m$ and it follows that $a \in A_i$.
-Suppose that $m < i$, and for the sake of contradiction, suppose that $a \not \in A_i$. 
-It also follows from the definition of $A_n$ that $A_m \supseteq A_i$.
-Now, $A_i$ cannot be a proper subset of $A_m$, since that would imply that $|A_i| < |A_m|$ and this contradicts the assumption that $A_m$ is the smallest possible subset. 
-Therefore, it follows that the only possibility is that $A_m = A_i$, thus we have that $|A_m| = |A_i|$. 
+ok?
 
 :::
 :::
