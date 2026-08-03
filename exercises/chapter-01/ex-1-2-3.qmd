@@ -82,6 +82,26 @@ Since a proper subset of a finite set has smaller cardinality, it follows that $
 In either case, we have that $a \in A_i$, so by the definition of infinite intersection, it follows that $a \in \bigcap_{n=1}^{\infty}A_n$, and thus $A_m \subseteq \bigcap_{n=1}^{\infty}A_n$.
 With inclusion in both directions, we conclude that $\bigcap_{n=1}^{\infty}A_n = A_m$. 
 :::
+
+Here's another proof that may be more elegant, depending on who you ask.
+
+::: {.proof}
+Let $k \in \mathbb{N}$.
+From lemma 2, there exists $m \in \mathbb{N}$ such that $|A_m| \leq |A_n|$ for all $n \in \mathbb{N}$.
+It follows that $|A_m| \leq |A_{m + k}|$. 
+Furthermore, the definition of $A_n$ implies that $A_{m} \supseteq A_{m + k}$ and it follows that $|A_m| \geq |A_{m + k}|$ as $A_m$ and $A_{m+k}$ are finite sets. 
+With $|A_m| \leq |A_{m + k}|$ and $|A_m| \geq |A_{m + k}|$, the only possibility is that $|A_m| = |A_{m+k}|$ and consequently $A_m = A_{m + k}$.
+Finally, it follows that
+$$
+\begin{align*}
+    \bigcap_{n=1}^{\infty}A_n &= (\bigcap_{n=1}^{m}A_n) \cap (\bigcap_{n=m+1}^{\infty}A_n) \\
+    &= A_m \cap (\bigcap_{n=m+1}^{\infty}A_m) \\
+    &= A_m \cap A_m \\
+    &= A_m
+\end{align*}
+$$
+Therefore we have that $\bigcap_{n=1}^{\infty}A_n = A_m$ as desired.
+:::
 :::
 
 Since $A_m$ is finite and nonempty, it follows that (b) is a *true* statement.
