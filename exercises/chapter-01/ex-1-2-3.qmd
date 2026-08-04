@@ -108,6 +108,58 @@ Since $A_m$ is finite and nonempty, it follows that (b) is a *true* statement.
 
 ### (c)
 
+It is a widely known mathematical fact that the set operations are also distributive, i.e.,
+$$
+A \cap (B \cup C) = (A \cap B) \cup (A \cap C)
+$$
+[Therefore, (e) is a true statement, which we will later prove.]
+
+Therefore, if $A \cap (B \cup C) = (A \cap B) \cup C$, then $A \cap C = C$.
+Since $A \cap C = C$ if and only if $C \subseteq A$, it follows that (c) is a true statement if and only if $C \subseteq A$. 
+Any set $C$ that is not a subset of $A$ should then invalidate the equality.
+
+For counterexample, let $A, B, C$ be sets with
+$$
+\begin{align*}
+    A &= \{a\} \\
+    B &= \{b\} \\
+    C &= \{c\}
+\end{align*}
+$$
+
+It follows that $A \cap (B \cup C) = \{a\} \cap \{b, c\} = \emptyset$, but $(A \cap B) \cup C = \emptyset \cup \{c\} = \{c\}$, thus $A \cap (B \cup C) \not = (A \cap B) \cup C$.
+It follows that (c) is a *false* statement.
+
 ### (d)
 
+It also is a widely known mathematical fact that set operations are associative.
+Set operation associativity is derived from the associativity of the logical connectives.
+
+::: {#lem-order}
+Let $A, B, C$ be sets. Then, $A \cap (B \cap C) = (A \cap B) \cap C$.
+
+::: {.proof}
+Let $x \in A \cap (B \cap C)$.
+We have that $x \in A$ and $x \in B \cap C$, and it follows that $x \in B$ and $x \in C$. 
+With $x \in A$ and $x \in B$, it follows that $x \in A \cap B$, and consequently $x \in (A \cap B) \cap C$ and we have that $A \cap (B \cap C) \subseteq (A \cap B) \cap C$.
+
+Now, let $x \in (A \cap B) \cap C$.
+Similarly, we have that $x \in A \cap B$ and $x \in C$, and it follows that $x \in A$ and $x \in B$.
+Thus, $x \in B \cap C$ and consequently $x \in A \cap (B \cap C)$.
+With $A \cap (B \cap C) \supseteq (A \cap B) \cap C$, it follows that $A \cap (B \cap C) = (A \cap B) \cap C$ as desired.
+:::
+:::
+
+With Lemma 4, it follows that (d) is a *true* statement. 
+
 ### (e)
+
+Now let us prove the distributive property mentioned in (c).
+
+::: {#lem-order}
+Let $A, B, C$ be sets. Then, $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$. 
+
+::: {.proof}
+blah blah blah
+:::
+:::
