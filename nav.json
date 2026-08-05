@@ -26,6 +26,18 @@
       "path": "/exercises/chapter-01/ex-1-2-2.qmd",
       "title": "Exercise 1.2.2"
     },
+    "next": {
+      "path": "/exercises/chapter-01/ex-1-2-4.qmd",
+      "title": "Exercise 1.2.4"
+    },
+    "index": "/chapters/chapter-01.qmd"
+  },
+  "ex-1-2-4": {
+    "title": "Exercise 1.2.4",
+    "prev": {
+      "path": "/exercises/chapter-01/ex-1-2-3.qmd",
+      "title": "Exercise 1.2.3"
+    },
     "next": null,
     "index": "/chapters/chapter-01.qmd"
   },

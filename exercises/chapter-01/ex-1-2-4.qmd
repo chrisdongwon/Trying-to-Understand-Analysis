@@ -1,0 +1,63 @@
+---
+title: "Exercise 1.2.4"
+---
+
+## Problem
+
+Produce an infinite collection of sets $A_1, A_2, A_3, \ldots$ with the property that every $A_i$ has an infinite number of elements, $A_i \cap A_j = \emptyset$ for all $i \not = j$, and $\bigcup_{i=1}^{\infty} A_i = \mathbb{N}$.
+
+## Solution
+
+I think it is very helpful to state the Fundamental Theorem of Arithmetic, which is the core idea for this exercise.
+We can exploit the uniquessness of prime factorization to form the partitions of $\mathbb{N}$. 
+
+::: {.lemma}
+**Fundamental Theorem of Arithmetic** Let $n \in \mathbb{N}$ with $n > 1$.
+Then there exist distinct primes $p_1 < p_2 < \ldots < p_k$ and $r_1,r_2,\ldots,r_k \in \mathbb{Z}^{+}$
+such that
+$$
+n = \prod_{i=1}^k p_i^{r_i}
+$$
+Moreover, this factorization is unique up to the ordering of the primes.
+:::
+
+Furthermore, we will also need to rely on the infinitude of primes to make our partitioned sets infinite.
+
+::: {.lemma}
+**Euclid's Theorem** There exist infinitely many primes.
+:::
+
+Let us form partitions of $\mathbb{N}$ by grouping natural numbers with the same number of prime factors including multiplicity.
+
+Let $A_1 = \{1\} \cup \{p_1, p_2, \ldots\}$ and for $j > 1$, let $A_j \subset \mathbb{N}$ such that
+$$
+A_j = \{n \in \mathbb{N} : n = \prod_{i=1}^k p_i^{r_i} \text{ and } \sum_{i = 1}^{k} r_i = j\}
+$$
+
+Let us prove the following lemmas to formalize our solution.
+
+::: {#lem-order}
+For all $j \in \mathbb{N}$, $A_j$ is countably infinite.
+
+::: {.proof}
+Let $j \in \mathbb{N}$.
+Since $A_j \subseteq \mathbb{N}$, it follows that $A_j$ is countable.
+If $j = 1$, then we have that $A_1$ is infinite by Euclid's Theorem.
+Suppose that $j > 1$.
+
+:::
+:::
+
+In particular, notice that $A_j$ is nonempty - this is a requirement for $A_j$ to be a partition of $\mathbb{N}$.
+
+::: {#lem-order}
+For all $i, j \in \mathbb{N}$, if $i \not = j$, then $A_i \cap A_j = \emptyset$.
+
+::: {.proof}
+Let $i, j \in \mathbb{N}$ and suppose that $i \not = j$. 
+:::
+:::
+
+::: {#lem-order}
+$\bigcup_{i=1}^{\infty} A_i = \mathbb{N}$
+:::
