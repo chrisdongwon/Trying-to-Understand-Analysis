@@ -8,12 +8,12 @@ Produce an infinite collection of sets $A_1, A_2, A_3, \ldots$ with the property
 
 ## Solution
 
-I think it is very helpful to state the Fundamental Theorem of Arithmetic, which is the core idea for this exercise.
+I think it is very helpful to state the Fundamental Theorem of Arithmetic, which is the core idea for this solution.
 We can exploit the uniquessness of prime factorization to form the partitions of $\mathbb{N}$. 
 
 ::: {.lemma}
 **Fundamental Theorem of Arithmetic** Let $n \in \mathbb{N}$ with $n > 1$.
-Then there exist distinct primes $p_1 < p_2 < \ldots < p_k$ and $r_1,r_2,\ldots,r_k \in \mathbb{Z}^{+}$
+Then there exist distinct primes $p_1 < p_2 < \ldots < p_k$ and $r_1,r_2,\ldots,r_k \in \mathbb{N}$
 such that
 $$
 n = \prod_{i=1}^k p_i^{r_i}
@@ -29,22 +29,26 @@ Furthermore, we will also need to rely on the infinitude of primes to make our p
 
 Let us form partitions of $\mathbb{N}$ by grouping natural numbers with the same number of prime factors including multiplicity.
 
-Let $A_1 = \{1\} \cup \{p_1, p_2, \ldots\}$ and for $j > 1$, let $A_j \subset \mathbb{N}$ such that
+Let $A_1 = \{1\} \cup \{p_1, p_2, \ldots\} = \{1, p_1, p_2, \ldots\}$ and for $i > 1$, let $A_i \subset \mathbb{N}$ such that
 $$
-A_j = \{n \in \mathbb{N} : n = \prod_{i=1}^k p_i^{r_i} \text{ and } \sum_{i = 1}^{k} r_i = j\}
+A_i = \{n \in \mathbb{N} : n = \prod_{j=1}^k p_j^{r_j} \text{ and } \sum_{j = 1}^{k} r_j = i\}
 $$
 
 Let us prove the following lemmas to formalize our solution.
 
 ::: {#lem-order}
-For all $j \in \mathbb{N}$, $A_j$ is countably infinite.
+For all $i \in \mathbb{N}$, $A_i$ is infinite.
 
 ::: {.proof}
-Let $j \in \mathbb{N}$.
-Since $A_j \subseteq \mathbb{N}$, it follows that $A_j$ is countable.
-If $j = 1$, then we have that $A_1$ is infinite by Euclid's Theorem.
-Suppose that $j > 1$.
+Let $i \in \mathbb{N}$, and let $P_i = \{ p_j^i : j \in \mathbb{N}\}$.
+Consider the following cases:
 
+- Suppose that $i = 1$. It follows that $A_1 = {1} \cup P_1$, and since $P_1$ is infinite by Euclid's Theorem, it follows that $A_1$ is infinite with $P_1 \subseteq A_1$.
+- Suppose that $i > 1$, and let $P \subseteq \mathbb{N}$ such that ... (to be continued)
+
+Let $n \in P$. Then, there exists $j \in \mathbb{N}$ such that $n = p_j^i$. 
+It immediately follows that $n \in A_i$ as $n = p_j^i$ is the prime factorization of $n$ and $n$ has $i$ prime factors.
+It follows that $P \subseteq A_i$, and as $P$ is infinite by Euclid's Theorem, it must be the case that $A_i$ is infinite as well.
 :::
 :::
 
@@ -54,7 +58,11 @@ In particular, notice that $A_j$ is nonempty - this is a requirement for $A_j$ t
 For all $i, j \in \mathbb{N}$, if $i \not = j$, then $A_i \cap A_j = \emptyset$.
 
 ::: {.proof}
-Let $i, j \in \mathbb{N}$ and suppose that $i \not = j$. 
+Let $i, j \in \mathbb{N}$ and suppose that $i \not = j$.
+For the sake of contradiction, suppose that $A_i \cap A_j \not = \emptyset$.
+Let $n \in A_i \cap A_j$. It follows that $n \in A_i$ and $n \in A_j$, thus $n$ has $i$ prime factors and $j$ prime factors.
+However, this is a contradiction as the fundamental theorem of arithmetic as the prime factorzation of $n$ is no longer unique. 
+Therefore, $n$ does not exist, and it follows that $A_i \cap A_j = \emptyset$. 
 :::
 :::
 
