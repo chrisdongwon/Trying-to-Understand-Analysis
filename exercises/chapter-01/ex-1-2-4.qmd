@@ -41,18 +41,21 @@ For all $i \in \mathbb{N}$, $A_i$ is infinite.
 
 ::: {.proof}
 Let $i \in \mathbb{N}$, and let $P_i = \{ p_j^i : j \in \mathbb{N}\}$.
-Consider the following cases:
+Consider the following cases.
 
-- Suppose that $i = 1$. It follows that $A_1 = {1} \cup P_1$, and since $P_1$ is infinite by Euclid's Theorem, it follows that $A_1$ is infinite with $P_1 \subseteq A_1$.
-- Suppose that $i > 1$, and let $P \subseteq \mathbb{N}$ such that ... (to be continued)
+Suppose that $i = 1$.
+It follows that $A_1 = \{1\} \cup P_1$, and since $P_1$ is infinite by Euclid's Theorem, it follows that $A_1$ is infinite with $P_1 \subseteq A_1$.
 
-Let $n \in P$. Then, there exists $j \in \mathbb{N}$ such that $n = p_j^i$. 
-It immediately follows that $n \in A_i$ as $n = p_j^i$ is the prime factorization of $n$ and $n$ has $i$ prime factors.
-It follows that $P \subseteq A_i$, and as $P$ is infinite by Euclid's Theorem, it must be the case that $A_i$ is infinite as well.
+Suppose that $i > 1$, and let $n \in P_i$.
+It follows that there exists $j \in \mathbb{N}$ such that $n = p_j^i$. 
+Since the prime factorization of $n$ has $i$ prime factors, it follows that $n \in A_i$, and thus $P_i \subseteq A_i$.
+$P_i$ is also infinite by Euclid's Theorem, so it follows that $A_i$ is infinite as well.
+
+In either case, $A_i$ is infinite as desired.
 :::
 :::
 
-In particular, notice that $A_j$ is nonempty - this is a requirement for $A_j$ to be a partition of $\mathbb{N}$.
+In particular, notice that $A_j$ is nonempty - this is a requirement for $A_i$ to be a partition of $\mathbb{N}$.
 
 ::: {#lem-order}
 For all $i, j \in \mathbb{N}$, if $i \not = j$, then $A_i \cap A_j = \emptyset$.
@@ -68,4 +71,21 @@ Therefore, $n$ does not exist, and it follows that $A_i \cap A_j = \emptyset$.
 
 ::: {#lem-order}
 $\bigcup_{i=1}^{\infty} A_i = \mathbb{N}$
+
+::: {.proof}
+Let $n \in \bigcup_{i=1}^{\infty} A_i$.
+It follows that there exists $i \in \mathbb{N}$ with $n \in A_i$.
+Since $A_i \subseteq \mathbb{N}$, it follows that $n \in \mathbb{N}$.
+Therefore, $\bigcup_{i=1}^{\infty} A_i \subseteq \mathbb{N}$.
+
+Let $n \in \mathbb{N}$.
+By the fundamental theorem of arithmetic, there exist primes $p_1, p_2, \ldots, p_k$ and $r_1, r_2, \ldots, r_k \in \mathbb{N}$ such that
+$$
+n = \prod_{i=1}^{k} p_i^{r_i}
+$$
+and let $K = \sum_{i=1}^{k} r_i$.
+It follows that $n \in A_K$ and with $A_K \subseteq \bigcup_{i=1}^{\infty} A_i$, we have that $n \in \bigcup_{i=1}^{\infty} A_i$. 
+Thus, $\mathbb{N} \subseteq \bigcup_{i=1}^{\infty} A_i$ and we conclude that $\bigcup_{i=1}^{\infty} A_i = \mathbb{N}$.
 :::
+:::
+By lemmas 1, 2, and 3, it follows that $A_i$ forms a partition of $\mathbb{N}$.
