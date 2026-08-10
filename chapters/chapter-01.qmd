@@ -29,4 +29,5 @@ foundation for the rest of analysis.
 | [1.2.1](../exercises/chapter-01/ex-1-2-1.qmd) | ✓ |
 | [1.2.2](../exercises/chapter-01/ex-1-2-2.qmd) | ✓ |
 | [1.2.3](../exercises/chapter-01/ex-1-2-3.qmd) | ✓ |
-| [1.2.4](../exercises/chapter-01/ex-1-2-4.qmd) | In Progress |
+| [1.2.4](../exercises/chapter-01/ex-1-2-4.qmd) | ✓ |
+| [1.2.5](../exercises/chapter-01/ex-1-2-5.qmd) | In Progress |

@@ -1,0 +1,62 @@
+---
+title: "Exercise 1.2.5 (De Morgan's Laws)"
+---
+
+## Problem
+
+(a) If $x \in (A \cap B)^{c}$, explain why $x \in A^c \cup B^c$.
+This shows that $(A \cap B)^c \subseteq A^c \cup B^c$.
+(b) Prove the reverse inclusion $(A \cap B)^c \supseteq A^c \cup B^c$, and conclude that $(A \cap B)^c = A^c \cup B^c$.
+(c) Show $(A \cup B)^c = A^c \cap B^c$ by demonstrating inclusion both ways.
+
+## Solution
+
+### (a)
+
+::: {#lem-order}
+Let $A$ and $B$ be sets.
+Then, $(A \cap B)^c \subseteq A^c \cup B^c$.
+
+::: {.proof}
+Let $x \in (A \cap B)^c$.
+It follows that $x \not \in A \cap B$.
+There are three cases to consider for $x \not \in A \cap B$ to be possible:
+
+- $x \in A$ and $x \not \in B$
+- $x \not \in A$ and $x \in B$
+- $x \not \in A$ and $x \not \in B$
+
+Thus we have that $x \not \in A$ or $x \not \in B$ and it follows that $x \in A^c$ or $x \in B^c$. 
+By the definition of set union, we conclude that $x \in A^c \cup B^c$ and hence the result follows.
+:::
+:::
+
+### (b)
+
+::: {#lem-order}
+Let $A$ and $B$ be sets.
+Then, $(A \cap B)^c = A^c \cup B^c$.
+
+::: {.proof}
+Let $x \in A^c \cup B^c$.
+By the definition of set union, it follows that $x \in A^c$ or $x \in B^c$ and we have that $x \not \in A$ or $x \not \in B$.
+Since $x \not \in A$ or $x \not \in B$ if and only if $x \not \in A \cap B$, it must be the case that $x \in (A \cap B)^c$.
+Therefore, $(A \cap B)^c \supseteq A^c \cup B^c$ and with lemma 1, we have that $(A \cap B)^c = A^c \cup B^c$. 
+:::
+:::
+
+### (c)
+
+::: {#lem-order}
+Let $A$ and $B$ be sets.
+Then, $(A \cup B)^c = A^c \cap B^c$.
+
+::: {.proof}
+Let $x \in (A \cup B)^c$.
+It follows that $x \not \in A \cup B$.
+Since $x \not \in A \cup B$ if and only if $x \not \in A$ and $x \not \in B$, it follows that $x \in A^c$ and $x \in B^c$.
+By the definition of set intersection, it follows that $x \in A^c \cap B^c$, thus we have that $(A \cup B)^c \subseteq A^c \cap B^c$.
+
+Let $x \in A^c \cup B^c$. ... ( to be continued )
+:::
+:::
