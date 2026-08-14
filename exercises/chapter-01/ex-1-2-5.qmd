@@ -57,6 +57,10 @@ It follows that $x \not \in A \cup B$.
 Since $x \not \in A \cup B$ if and only if $x \not \in A$ and $x \not \in B$, it follows that $x \in A^c$ and $x \in B^c$.
 By the definition of set intersection, it follows that $x \in A^c \cap B^c$, thus we have that $(A \cup B)^c \subseteq A^c \cap B^c$.
 
-Let $x \in A^c \cup B^c$. ... ( to be continued )
+Let $x \in A^c \cap B^c$.
+By the definition of set intersection, we have that $x \in A^c$ and $x \in B^c$. 
+It follows that $x \not \in A$ and $x \not \in B$.
+Since $x \not \in A$ and $x \not \in B$ if and only if $x \not \in A \cup B$, we have that $x \in (A \cup B)^c$. 
+It then follows that $A^c \cap B^c \subseteq (A \cup B)^c$ and consequently the result follows.
 :::
 :::

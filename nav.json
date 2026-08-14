@@ -50,6 +50,18 @@
       "path": "/exercises/chapter-01/ex-1-2-4.qmd",
       "title": "Exercise 1.2.4"
     },
+    "next": {
+      "path": "/exercises/chapter-01/ex-1-2-6.qmd",
+      "title": "Exercise 1.2.6"
+    },
+    "index": "/chapters/chapter-01.qmd"
+  },
+  "ex-1-2-6": {
+    "title": "Exercise 1.2.6",
+    "prev": {
+      "path": "/exercises/chapter-01/ex-1-2-5.qmd",
+      "title": "Exercise 1.2.5 (De Morgan's Laws)"
+    },
     "next": null,
     "index": "/chapters/chapter-01.qmd"
   },

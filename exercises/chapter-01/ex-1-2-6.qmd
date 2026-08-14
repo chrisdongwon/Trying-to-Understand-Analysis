@@ -1,0 +1,20 @@
+---
+title: "Exercise 1.2.6"
+---
+
+## Problem
+
+(a) Verify the triangle inequality in the special case where $a$ and $b$ have the same sign.
+(b) Find an efficient proof for all the cases at once by first demonstrating $(a + b)^2 = (|a| + |b|)^2$.
+(c) Prove $|a - b| \leq |a - c| + |c - d| + |d - b|$ for all $a, b, c,$ and $d$.
+(d) Prove $||a| - |b|| \leq |a - b|$. (The unremarkable identity $a = a - b + b$ may be useful.)
+
+## Solution
+
+### (a)
+
+### (b)
+
+### (c)
+
+### (d)
