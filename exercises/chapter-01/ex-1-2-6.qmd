@@ -5,7 +5,7 @@ title: "Exercise 1.2.6"
 ## Problem
 
 (a) Verify the triangle inequality in the special case where $a$ and $b$ have the same sign.
-(b) Find an efficient proof for all the cases at once by first demonstrating $(a + b)^2 = (|a| + |b|)^2$.
+(b) Find an efficient proof for all the cases at once by first demonstrating $(a + b)^2 \leq (|a| + |b|)^2$.
 (c) Prove $|a - b| \leq |a - c| + |c - d| + |d - b|$ for all $a, b, c,$ and $d$.
 (d) Prove $||a| - |b|| \leq |a - b|$. (The unremarkable identity $a = a - b + b$ may be useful.)
 
@@ -13,7 +13,47 @@ title: "Exercise 1.2.6"
 
 ### (a)
 
+::: {#lem-order}
+Let $a, b \in \mathbb{R}$. If $a$ and $b$ have the same sign, then $|a + b| = |a| + |b|$. 
+
+::: {.proof}
+Suppose that $a > 0$ and $b > 0$.
+With $a = |a|$ and $b = |b|$, we have that $a + b = |a| + |b|$. 
+Since $a + b > 0$, we have that $a + b = |a + b|$, and thus $|a + b| = |a| + |b|$. 
+
+Suppose that $a < 0$ and $b < 0$. 
+With $-a = |a|$ and $-b = |b|$, we have that $(-a) + (-b) = |a| + |b|$.
+Since $a + b < 0$, we have that $-(a + b) = |a + b|$, where $-(a + b) = (-a) + (-b)$. 
+Thus it follows that $|a + b| = |a| + |b|$. 
+
+In either case, we have that $|a + b| = |a| + |b|$. 
+:::
+:::
+
+It then follows that $|a + b| \leq |a| + |b|$. 
+
 ### (b)
+
+::: {#lem-order}
+Let $a, b \in \mathbb{R}$. Then, $(a + b)^2 \leq (|a| + |b|)^2$. 
+
+::: {.proof}
+With $a \leq |a|$ and $b \leq |b|$, it immediately follows that $a + b \leq |a| + |b|$.
+We then have that $(a+b)^2 \leq (a+b)(|a|+|b|)$ and $(a+b)(|a|+|b|) \leq (|a|+|b|)^2$ by multiplying the inequality by $(a+b)$ and $|a| + |b|$, respectively.
+It then follows that $(a + b)^2 \leq (|a| + |b|)^2$ as desired.
+:::
+:::
+
+Before we can conclude that the triangle inequality is simply a corollary of lemma 2, let us formally prove the result with the assistance of the following lemma.
+
+::: {#lem-order}
+Let $x \in \mathbb{R}$. Then, $\sqrt{x^2} = |x|$.
+
+::: {.proof}
+to be continued...
+:::
+:::
+
 
 ### (c)
 
