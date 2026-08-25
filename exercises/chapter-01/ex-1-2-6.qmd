@@ -30,7 +30,7 @@ In either case, we have that $|a + b| = |a| + |b|$.
 :::
 :::
 
-It then follows that $|a + b| \leq |a| + |b|$. 
+It then follows that $|a + b| \leq |a| + |b|$ for this particular case.
 
 ### (b)
 
@@ -44,16 +44,16 @@ It then follows that $(a + b)^2 \leq (|a| + |b|)^2$ as desired.
 :::
 :::
 
-Before we can conclude that the triangle inequality is simply a corollary of lemma 2, let us formally prove the result with the assistance of the following lemma.
-
 ::: {#lem-order}
-Let $x \in \mathbb{R}$. Then, $\sqrt{x^2} = |x|$.
+Let $x, y \in \mathbb{R}_{\geq 0}$.
+If $x^2 \leq y^2$, then $|x| \leq |y|$. 
 
 ::: {.proof}
-to be continued...
+Suppose that $x^2 = y^2$.
+It follows that $x ^2 - y^2 = 0$, where $x^2 - y^2 = (x + y)(x - y)$.
+Then, $x + y = 0$ or $x - y = 0$, thus $x = -y$ or $x = y$.
 :::
-:::
-
+::: 
 
 ### (c)
 
