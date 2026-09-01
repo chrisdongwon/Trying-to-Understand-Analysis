@@ -71,4 +71,31 @@ Combination of Lemma 2 and Lemma 3 make triangle inequality more of a corollary.
 
 ### (c)
 
+::: {#lem-order}
+Let $a, b, c, d \in \mathbb{R}$.
+Then, $|a - b| \leq |a - c| + |c - d| + |d - b|$.
+
+::: {.proof}
+Notice that
+$$
+\begin{align*}
+a - b &= a + (-c + c) + (-d + d) - b \\
+&= (a - c) + (c - d) + (d - b)
+\end{align*}
+$$
+Thus, $|a - b| = |(a - c) + (c - d) + (d - b)| \leq |a - b| + |(c - d) + (d - b)|$ by the triangle inequality, and another application yields $|a - b| \leq |a - c| + |c - d| + |d - b|$ as desired.
+:::
+:::
+
 ### (d) 
+
+::: {#lem-order}
+Let $a, b \in \mathbb{R}$.
+Then, $||a| - |b|| \leq |a - b|$.
+
+::: {.proof}
+Notice that $a = a + (-b + b) = (a - b) + b$.
+By the triangle inequality, we have that $|a| = |(a - b) + b| \leq |a - b| + |b|$.
+It follows that $|a| - | b| \leq |a - b|$
+:::
+:::
