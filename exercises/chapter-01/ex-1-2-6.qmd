@@ -17,6 +17,9 @@ title: "Exercise 1.2.6"
 Let $a, b \in \mathbb{R}$. If $a$ and $b$ have the same sign, then $|a + b| = |a| + |b|$. 
 
 ::: {.proof}
+Suppose that $a = 0$ and $b = 0$.
+It immediately follows that $|a + b| = |a| + |b| = 0$.
+
 Suppose that $a > 0$ and $b > 0$.
 With $a = |a|$ and $b = |b|$, we have that $a + b = |a| + |b|$. 
 Since $a + b > 0$, we have that $a + b = |a + b|$, and thus $|a + b| = |a| + |b|$. 
@@ -38,9 +41,9 @@ It then follows that $|a + b| \leq |a| + |b|$ for this particular case.
 Let $a, b \in \mathbb{R}$. Then, $(a + b)^2 \leq (|a| + |b|)^2$. 
 
 ::: {.proof}
-With $a \leq |a|$ and $b \leq |b|$, it immediately follows that $a + b \leq |a| + |b|$.
-We then have that $(a+b)^2 \leq (a+b)(|a|+|b|)$ and $(a+b)(|a|+|b|) \leq (|a|+|b|)^2$ by multiplying the inequality by $(a+b)$ and $|a| + |b|$, respectively.
-It then follows that $(a + b)^2 \leq (|a| + |b|)^2$ as desired.
+With $a \leq |a|$ and $b \leq |b|$, we have that $ab \leq |a||b|$.
+Furthermore, with $a^2 = |a|^2$ and $b^2 = |b|^2$, we have that $a^2 + 2ab + b^2 \leq |a|^2 + 2|a||b| + |b|^2$.
+It then follows that $(a + b)^2 \leq (|a| + |b|)^2$.
 :::
 :::
 
@@ -83,7 +86,7 @@ a - b &= a + (-c + c) + (-d + d) - b \\
 &= (a - c) + (c - d) + (d - b)
 \end{align*}
 $$
-Thus, $|a - b| = |(a - c) + (c - d) + (d - b)| \leq |a - b| + |(c - d) + (d - b)|$ by the triangle inequality, and another application yields $|a - b| \leq |a - c| + |c - d| + |d - b|$ as desired.
+Thus, $|a - b| \leq |a - c| + |(c - d) + (d - b)|$ by the triangle inequality, and another application yields $|a - b| \leq |a - c| + |c - d| + |d - b|$ as desired.
 :::
 :::
 
@@ -96,6 +99,13 @@ Then, $||a| - |b|| \leq |a - b|$.
 ::: {.proof}
 Notice that $a = a + (-b + b) = (a - b) + b$.
 By the triangle inequality, we have that $|a| = |(a - b) + b| \leq |a - b| + |b|$.
-It follows that $|a| - | b| \leq |a - b|$
-:::
+It follows that $|a| - |b| \leq |a - b|$.
+
+Suppose that $|a| - |b| \geq 0$.
+Then, $||a|-|b|| = |a| - |b| \leq |a - b|$.
+
+Suppose that $|a| - |b| < 0$. 
+It follows that $|a| - |b| < 0 \leq |a - b|$.
+We then have that $-|a - b| < |b| - |a|$, where $|a - b| = |b - a|$.
+Thus, $-|b - a| < |b| - |a|$, (to be continued...)
 :::
