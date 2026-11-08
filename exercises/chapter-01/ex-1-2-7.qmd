@@ -1,0 +1,16 @@
+---
+title: "Exercise 1.2.7"
+---
+
+## Problem
+
+Given a function $f$ and a subset $A$ of its domain, let $f(A)$ represent the range of $f$ over the set $A$; that is, $f(A) = \{f(x) : x \in A\}$. 
+
+(a) Let $f(x) = x^2$. If $A = [0,2]$ (the closed interval $\{x \in \mathbb{R} : 0 \leq x \leq 2\}$) and $B = [1,4]$, find $f(A)$ and $f(B)$. Does $f(A \cap B) = f(A) \cap f(B)$ in this case? Does $f(A \cup B) = f(A) \cup f(B)$?
+(b) Find two sets $A$ and $B$ for which $f(A \cap B) \not = f(A) \cap f(B)$.
+(c) Show that, for an arbitrary function $g: \mathbb{R} \to \mathbb{R}$, it is always true that $g(A \cap B) \subseteq g(A) \cap g(B)$ for all sets $A, B \subseteq \mathbb{R}$.
+(d) Form and prove a conjecture about the relationship between $g(A \cup B)$ and $g(A) \cup g(B)$ for an arbitrary function $g$.
+
+## Solution
+
+To be continued...
