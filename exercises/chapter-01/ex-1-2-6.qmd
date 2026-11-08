@@ -97,15 +97,8 @@ Let $a, b \in \mathbb{R}$.
 Then, $||a| - |b|| \leq |a - b|$.
 
 ::: {.proof}
-Notice that $a = a + (-b + b) = (a - b) + b$.
-By the triangle inequality, we have that $|a| = |(a - b) + b| \leq |a - b| + |b|$.
-It follows that $|a| - |b| \leq |a - b|$.
-
-Suppose that $|a| - |b| \geq 0$.
-Then, $||a|-|b|| = |a| - |b| \leq |a - b|$.
-
-Suppose that $|a| - |b| < 0$. 
-It follows that $|a| - |b| < 0 \leq |a - b|$.
-We then have that $-|a - b| < |b| - |a|$, where $|a - b| = |b - a|$.
-Thus, $-|b - a| < |b| - |a|$, (to be continued...)
+By following the hint and then applying the triangle inequality, we have that $|a| = |(a - b) + b| \leq |a - b| + |b|$.
+It then follows that $|a| - |b| \leq |a - b|$ and $|b| - |a| \leq |b-a|$ by symmetry.
+With $|a - b| = |b - a|$, we have that $|b| - |a| \leq |a - b|$, and it follows that $-|a - b| \leq |a| - |b|$. 
+Combining the inequalities yields $-|a - b| \leq |a| - |b| \leq |a - b|$, which implies that $||a| - |b|| \leq |a - b|$.
 :::
